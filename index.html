@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pure CSS — Solar System</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <div class="hud">
+    <div class="hud-title">Solar System</div>
+    <div class="hud-sub">Pure CSS Animation — No JavaScript</div>
+  </div>
+
+  <div class="badge">CSS Only<br/>Scale: Artistic</div>
+
+  <div class="scene">
+    <div class="sun"></div>
+
+    <!-- Mercury -->
+    <div class="orbit orbit-mercury">
+      <div class="planet planet-mercury">
+        <span class="planet-label">Mercury</span>
+      </div>
+    </div>
+
+    <!-- Venus -->
+    <div class="orbit orbit-venus">
+      <div class="planet planet-venus">
+        <span class="planet-label">Venus</span>
+      </div>
+    </div>
+
+    <!-- Earth + Moon -->
+    <div class="orbit orbit-earth">
+      <div class="planet planet-earth" style="position:relative;">
+        <span class="planet-label">Earth</span>
+        <div class="orbit orbit-moon" style="position:absolute; top:50%; left:50%;">
+          <div class="planet planet-moon"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mars -->
+    <div class="orbit orbit-mars">
+      <div class="planet planet-mars">
+        <span class="planet-label">Mars</span>
+      </div>
+    </div>
+
+    <!-- Jupiter -->
+    <div class="orbit orbit-jupiter">
+      <div class="planet planet-jupiter">
+        <span class="planet-label">Jupiter</span>
+      </div>
+    </div>
+
+    <!-- Saturn -->
+    <div class="orbit orbit-saturn">
+      <div class="planet planet-saturn">
+        <span class="planet-label">Saturn</span>
+      </div>
+    </div>
+
+    <!-- Uranus -->
+    <div class="orbit orbit-uranus">
+      <div class="planet planet-uranus">
+        <span class="planet-label">Uranus</span>
+      </div>
+    </div>
+
+    <!-- Neptune -->
+    <div class="orbit orbit-neptune">
+      <div class="planet planet-neptune">
+        <span class="planet-label">Neptune</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#9a8878"></div>Mercury</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#e8c470"></div>Venus</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#2060c0"></div>Earth</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#c84020"></div>Mars</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#d09050"></div>Jupiter</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#d4a848"></div>Saturn</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#60c0d0"></div>Uranus</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#3040c0"></div>Neptune</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
